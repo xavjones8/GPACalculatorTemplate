@@ -19,61 +19,47 @@
         android:text="Class 1"
         android:textSize="20sp" />
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/lblHours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Credit Hours"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/lblHours"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="Credit Hours"
-            android:textSize="16sp" />
-
-        <EditText
-            android:id="@+id/txtHours"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:ems="10"
-            android:hint="Enter a number"
-            android:inputType="text"
-            android:minHeight="48dp"
-            android:textSize="12sp" />
-
-    </LinearLayout>
-
-    <LinearLayout
+    <EditText
+        android:id="@+id/txtHours"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter a number"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="12sp" />
 
-        <TextView
-            android:id="@+id/lblGrade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:text="Grade"
-            android:textSize="16sp" />
+    <EditText
+        android:id="@+id/txtGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Ex. A+, A, A-"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textSize="12sp" />
 
-        <EditText
-            android:id="@+id/txtGrade"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:ems="10"
-            android:hint="Ex. A+, A, A-"
-            android:inputType="text"
-            android:minHeight="48dp"
-            android:textSize="12sp" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/lblGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Grade"
+        android:textSize="16sp" />
 
 
 </LinearLayout>

@@ -12,19 +12,6 @@ class ClassListAdapter(private val context: Activity, private val classes: Mutab
         val inflater = context.layoutInflater
         val rowView = inflater.inflate(R.layout.semester_list_row, null, true)
 
-        val titleText = rowView.findViewById(R.id.lblClassID) as TextView
-        val hoursText = rowView.findViewById(R.id.txtHours) as EditText
-        val gradeText = rowView.findViewById(R.id.txtGrade) as EditText
-
-
-        titleText.text = classes[position].title
-        hoursText.addTextChangedListener {
-            classes[position].hours = hoursText.text.toString()
-        }
-        gradeText.addTextChangedListener {
-            classes[position].grade = gradeText.text.toString()
-        }
-
         return rowView
     }
 

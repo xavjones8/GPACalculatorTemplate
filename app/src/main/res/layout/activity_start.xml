@@ -11,12 +11,10 @@
         android:id="@+id/lblTitleView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="16dp"
         android:text="NCSU GPA Calculator"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/lblDegreeCredits"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="318dp" />
 
     <TextView
         android:id="@+id/lblCurrentGPA"
@@ -34,91 +32,67 @@
         android:id="@+id/lblDegreeCredits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
         android:labelFor="@id/txtNumberOfDegreeHours"
         android:text="Amount of Degree Credits:"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/txtNumberOfDegreeHours"
-        app:layout_constraintEnd_toEndOf="parent" />
+        tools:layout_editor_absoluteX="216dp"
+        tools:layout_editor_absoluteY="380dp" />
 
     <EditText
         android:id="@+id/txtCurrentGPA"
-        android:layout_width="0dp"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Enter your GPA here. "
+        android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:minHeight="48dp"
         android:numeric="decimal"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/lblHowManyClasses"
-        app:layout_constraintEnd_toStartOf="@+id/txtNumberOfDegreeHours"
-        app:layout_constraintStart_toStartOf="parent"
-        android:importantForAutofill="no" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="418dp" />
 
     <EditText
         android:id="@+id/txtNumberOfDegreeHours"
-        android:layout_width="0dp"
+        android:layout_width="190dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:hint="Enter the number of degree credits "
+        android:importantForAutofill="no"
         android:inputType="number"
         android:isScrollContainer="true"
         android:minHeight="48dp"
         android:numeric="integer"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/lblHowManyClasses"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/txtCurrentGPA"
-        android:importantForAutofill="no" />
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="418dp" />
 
     <TextView
         android:id="@+id/lblHowManyClasses"
-        android:layout_width="0dp"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
         android:text="How many classes are you taking this semester?"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtCurrentGPA" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="482dp" />
 
     <Button
         android:id="@+id/btnNext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="100dp"
         android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="583dp" />
 
     <EditText
         android:id="@+id/txtNumberOfClasses"
-        android:layout_width="0dp"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="number"
         android:minHeight="48dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnNext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblHowManyClasses" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="519dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
